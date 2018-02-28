@@ -7,8 +7,8 @@ const qs = require('querystring');
 var fs = require('fs');
 
 var app = express();
-var client_id = 'Bx3k9QA02ShYeDVyLQpf';
-var client_secret = 'DvfCZekAZs';
+var client_id = '{YOUR_CLIENT_ID}';
+var client_secret = '{YOUR_SECRET_KEY}';
 
 app.get('/naverSearchAPI/:query', function (req, res) {
 
@@ -17,8 +17,8 @@ app.get('/naverSearchAPI/:query', function (req, res) {
 
   var config = {
     headers: {
-      'X-Naver-Client-Id' : 'dKOtBRuD3Lq5XXkoQS07',
-      'X-Naver-Client-Secret' : 'Utv6o9mrTL'
+      'X-Naver-Client-Id' : '{YOUR_CLIENT_ID}',
+      'X-Naver-Client-Secret' : '{YOUR_SECRET_KEY}'
     }
   };
 
